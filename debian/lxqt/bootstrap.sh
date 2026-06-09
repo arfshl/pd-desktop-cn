@@ -37,7 +37,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-lxqt*
 
 # Setup debian-lxqt
-proot-distro install docker.m.daocloud.io/debian:stable --name debian-lxqt
+proot-distro install docker.m.daocloud.io/debian:latest --name debian-lxqt
 
 proot-distro login debian-lxqt -- /bin/sh -c 'apt update && apt install wget -y'
 

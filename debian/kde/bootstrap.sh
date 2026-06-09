@@ -35,7 +35,7 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/debian-kde*
 
 # Setup debian-kde
-proot-distro install docker.m.daocloud.io/debian:stable --name debian-kde
+proot-distro install docker.m.daocloud.io/debian:latest --name debian-kde
 
 proot-distro login debian-kde -- /bin/sh -c 'apt update && apt install wget -y'
 
